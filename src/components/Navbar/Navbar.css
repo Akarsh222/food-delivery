@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+.main-navbar ul{
+    display: flex;
+    gap: 50px;
+}
+
+.main-navbar .active{
+    border-bottom: 1px solid red;
+    padding-bottom: 5px;
+
+}
+.right-navbar{
+    display: flex;
+    gap: 40px;
+    width: 250px;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .right-navbar img{
+    width: 25px;
+    height: 25px;
+ }
+
+ .cart{
+    position: relative;
+ }
+
+ .cart .dot{
+    position: absolute;
+    background-color: red;
+    border-radius: 20px;
+    min-height: 10px;
+    min-width: 10px;
+    z-index: -1;
+    top: 5px;
+    left: 15px;
+    visibility: hidden;
+    transition: .3s;
+ }
+.cart:hover .dot{
+    top: -10px;
+    left: 18px;
+    visibility: visible;
+}
+
+ .right-navbar button{
+    border-radius: 20px;
+    padding: 10px 30px;
+    transition: .3s;
+ }
+ .right-navbar button:hover{
+    background-color: tomato;
+    color: white;
+ }
+
+ 
+
